@@ -1,23 +1,22 @@
 const cliente = {
-  nome: "Joao",
-  idade: 24,
-  email: "joao@firma.com",
-  telefone: ["1155555550", "1144444440"],
+    nome: "Lucas",
+    idade: 16,
+    email: "lucaschavaren@backend.com",
+    telefone: ["42 40029822", "42 6767676767"],
 };
 
 cliente.enderecos = [
-  {
-    rua: "R. Joseph Climber",
-    numero: 1337,
-    apartamento: true,
-    complemento: "ap 934",
-  },
+    {
+        rua: "R. Joseph Climber",
+        numero: 1931,
+        apartamento: true,
+        complemento: "ap 1931",
+},
 ];
 
-const chavesDoObjeto = Object.keys(cliente);
+const chaveDoObjeto = Object.keys(cliente);
+console.log(chaveDoObjeto);
 
-console.log(chavesDoObjeto);
-
-if (!chavesDoObjeto.includes("enderecos")) {
-  console.error("Erro. É necessário ter um endereço cadastrado.");
+if (!chaveDoObjeto.includes("enderecos")){
+    console.error("Erro. É necessário ter um endereço cadastrado");
 }

@@ -1,29 +1,29 @@
 const cliente = {
-  nome: "Joao",
-  idade: 24,
-  email: "joao@firma.com",
-  telefone: ["1155555550", "1144444440"],
+    nome: "Lucas",
+    idade: 16,
+    email: "lucas@firma.com",
+    telefone: ["42 2226667777", "42 222333444"],
 };
 
 cliente.enderecos = [
-  {
-    rua: "R. Joseph Climber",
-    numero: 1337,
-    apartamento: true,
-    complemento: "ap 934",
-  },
+    {
+        rua: "R. Joseph Climber",
+        numero: 1931,
+        apartamento: true,
+        complemento: "ap 1931",
+},
 ];
 
-function ligaParaCliente(telefoneComercial, telefoneResidencial) {
-  console.log(`Ligando para ${telefoneComercial}`);
-  console.log(`Ligando para ${telefoneResidencial}`);
+function ligaParaCliente(telefoneComercial, telefoneResidencial){
+    console.log(`Ligando para ${telefoneComercial}`);
+    console.log(`Ligando para ${telefoneResidencial}`);
 }
 
-ligaParaCliente(...cliente.telefone);
+ligaParaCliente(...cliente.telefone)
 
 const encomenda = {
-  destinatario: cliente.nome,
-  ...cliente.enderecos[0],
+    destinatario: cliente.nome,
+    ...cliente.enderecos[0],
 };
 
 console.log(encomenda);
