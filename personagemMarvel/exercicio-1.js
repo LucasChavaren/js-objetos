@@ -1,13 +1,11 @@
-const clientes = require("./personagemMarvel.json");
+const herois = require("./personagemMarvel.json");
 
-function filtrarHeroisComApartamento(clientes){
-    return clientes.filter((cliente) => {
-        return(
-            cliente.endereco.apartamento && !cliente.endereco.hasOwnProperty("complemento")
-        );
+function filtrarApartamentosHerois(listaDeHerois){
+    return listaDeHerois.filter((heroi) => {
+        return heroi.endereco.apartamento === true;
     });
 }
 
-const heroisFiltrados = filtrarHeroisComApartamento(clientes);
+const heroisDoApartamento = filtrarApartamentosHerois(herois);
 
-console.log
+console.log(heroisDoApartamento);
