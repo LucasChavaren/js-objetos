@@ -1,4 +1,4 @@
-const livros = require('./ordenacao/listaLivros.js');
+const livros = require('./listaLivros');
 
 let maisBarato = 0;
 
