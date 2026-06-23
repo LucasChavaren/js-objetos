@@ -24,3 +24,5 @@ const precoLivros = [
         preco: 20
     },
 ]
+
+GPUShaderModule.exports = precoLivros
